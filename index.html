@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDFC Ergo VROOOM Implementation Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Header Section -->
+        <header class="dashboard-header">
+            <div class="header-content">
+                <h1 class="dashboard-title">🚗 HDFC Ergo VROOOM Implementation Dashboard</h1>
+                <div class="header-subtitle">
+                    <span class="date">October 05, 2025</span>
+                    <span class="status-badge status--info">In Progress</span>
+                </div>
+                <div class="quick-stats">
+                    <div class="stat-item">
+                        <span class="stat-value">35%</span>
+                        <span class="stat-label">Overall Progress</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">₹28.5M</span>
+                        <span class="stat-label">Investment</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">₹45.8M</span>
+                        <span class="stat-label">Expected ROI</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">2027-10-01</span>
+                        <span class="stat-label">Target Completion</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="dashboard-main">
+            <!-- Overview Database -->
+            <section class="dashboard-section">
+                <div class="section-header collapsible-header" data-section="overview">
+                    <div class="section-toggle">
+                        <span class="toggle-arrow">▼</span>
+                        <h2>📊 Project Overview</h2>
+                    </div>
+                </div>
+                <div class="section-content" id="overview-content">
+                    <div class="overview-grid">
+                        <div class="overview-card">
+                            <div class="progress-ring-container">
+                                <div class="progress-ring" data-progress="35">
+                                    <div class="progress-value">35%</div>
+                                </div>
+                            </div>
+                            <h3>Project Progress</h3>
+                            <p>Overall implementation progress across all stages</p>
+                        </div>
+                        <div class="overview-card">
+                            <h3>📋 Key Stakeholders</h3>
+                            <div class="stakeholder-list">
+                                <div class="stakeholder-item">
+                                    <span class="stakeholder-avatar">R</span>
+                                    <div class="stakeholder-info">
+                                        <div class="stakeholder-name">Rajesh Kumar</div>
+                                        <div class="stakeholder-role">Project Manager</div>
+                                    </div>
+                                </div>
+                                <div class="stakeholder-item">
+                                    <span class="stakeholder-avatar">P</span>
+                                    <div class="stakeholder-info">
+                                        <div class="stakeholder-name">Priya Sharma</div>
+                                        <div class="stakeholder-role">Tech Lead</div>
+                                    </div>
+                                </div>
+                                <div class="stakeholder-item">
+                                    <span class="stakeholder-avatar">A</span>
+                                    <div class="stakeholder-info">
+                                        <div class="stakeholder-name">Amit Patel</div>
+                                        <div class="stakeholder-role">Product Owner</div>
+                                    </div>
+                                </div>
+                                <div class="stakeholder-item">
+                                    <span class="stakeholder-avatar">S</span>
+                                    <div class="stakeholder-info">
+                                        <div class="stakeholder-name">Sneha Reddy</div>
+                                        <div class="stakeholder-role">Marketing Head</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="overview-card">
+                            <h3>🎯 Success Metrics</h3>
+                            <div class="metrics-list">
+                                <div class="metric-item">
+                                    <span class="metric-label">Customer Acquisition</span>
+                                    <span class="metric-value">125K</span>
+                                </div>
+                                <div class="metric-item">
+                                    <span class="metric-label">Processing Time ↓</span>
+                                    <span class="metric-value">42%</span>
+                                </div>
+                                <div class="metric-item">
+                                    <span class="metric-label">First Call Resolution</span>
+                                    <span class="metric-value">78.3%</span>
+                                </div>
+                                <div class="metric-item">
+                                    <span class="metric-label">Partner Adoption</span>
+                                    <span class="metric-value">68%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Implementation Stages -->
+            <section class="dashboard-section">
+                <div class="section-header collapsible-header" data-section="stages">
+                    <div class="section-toggle">
+                        <span class="toggle-arrow">▼</span>
+                        <h2>🚀 Implementation Stages</h2>
+                    </div>
+                </div>
+                <div class="section-content" id="stages-content">
+                    <div class="stages-container">
+                        <!-- Stage 1 -->
+                        <div class="stage-card">
+                            <div class="stage-header collapsible-header" data-section="stage-1">
+                                <div class="stage-toggle">
+                                    <span class="toggle-arrow">▼</span>
+                                    <div class="stage-info">
+                                        <h3>Stage 1: Discover & MVP</h3>
+                                        <span class="stage-timeframe">0-3 months</span>
+                                    </div>
+                                </div>
+                                <div class="stage-status">
+                                    <span class="status-badge status--warning">In Progress</span>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 85%"></div>
+                                        <span class="progress-text">85%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stage-content" id="stage-1-content">
+                                <div class="stage-details">
+                                    <div class="stage-section">
+                                        <h4>📋 Tasks</h4>
+                                        <div class="task-list">
+                                            <label class="task-item">
+                                                <input type="checkbox" checked>
+                                                <span class="checkmark"></span>
+                                                <span class="task-text">Voice AI MVP Development</span>
+                                                <span class="task-assignee">Tech Team</span>
+                                            </label>
+                                            <label class="task-item">
+                                                <input type="checkbox" checked>
+                                                <span class="checkmark"></span>
+                                                <span class="task-text">B2B API Integration</span>
+                                                <span class="task-assignee">Integration Team</span>
+                                            </label>
+                                            <label class="task-item">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                                <span class="task-text">Agent Copilot Pilot</span>
+                                                <span class="task-assignee">Product Team</span>
+                                            </label>
+                                            <label class="task-item">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                                <span class="task-text">Actuarial POC</span>
+                                                <span class="task-assignee">Actuarial Team</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="stage-section">
+                                        <h4>🎯 Deliverables</h4>
+                                        <div class="deliverables-list">
+                                            <div class="deliverable-item">Voice quotes/KYC/bind MVP</div>
+                                            <div class="deliverable-item">Sandbox APIs</div>
+                                            <div class="deliverable-item">100-agent pilot</div>
+                                            <div class="deliverable-item">Pricing POC validated</div>
+                                        </div>
+                                    </div>
+                                    <div class="stage-section">
+                                        <h4>👥 Stakeholders</h4>
+                                        <div class="stakeholder-tags">
+                                            <span class="tag">Tech/Product/Data</span>
+                                            <span class="tag">Legal & Compliance</span>
+                                            <span class="tag">Swiggy/Zomato tech</span>
+                                            <span class="tag">Field agents</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Stage 2 -->
+                        <div class="stage-card">
+                            <div class="stage-header collapsible-header" data-section="stage-2">
+                                <div class="stage-toggle">
+                                    <span class="toggle-arrow">▼</span>
+                                    <div class="stage-info">
+                                        <h3>Stage 2: Build & Secure</h3>
+                                        <span class="stage-timeframe">4-9 months</span>
+                                    </div>
+                                </div>
+                                <div class="stage-status">
+                                    <span class="status-badge status--info">Planning</span>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 25%"></div>
+                                        <span class="progress-text">25%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stage-content hidden" id="stage-2-content">
+                                <div class="stage-details">
+                                    <div class="stage-section">
+                                        <h4>📋 Tasks</h4>
+                                        <div class="task-list">
+                                            <label class="task-item">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                                <span class="task-text">Voice Biometrics Implementation</span>
+                                                <span class="task-assignee">Security Team</span>
+                                            </label>
+                                            <label class="task-item">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                                <span class="task-text">Dealer Network Expansion</span>
+                                                <span class="task-assignee">Sales Team</span>
+                                            </label>
+                                            <label class="task-item">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                                <span class="task-text">AI Marketing Campaign</span>
+                                                <span class="task-assignee">Marketing Team</span>
+                                            </label>
+                                            <label class="task-item">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                                <span class="task-text">Omnichannel Setup</span>
+                                                <span class="task-assignee">Customer Service</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="stage-section">
+                                        <h4>🎯 Deliverables</h4>
+                                        <div class="deliverables-list">
+                                            <div class="deliverable-item">Biometrics in UAT</div>
+                                            <div class="deliverable-item">50 dealers onboarded</div>
+                                            <div class="deliverable-item">Always-on test-and-learn</div>
+                                            <div class="deliverable-item">Comms orchestration in CRM</div>
+                                        </div>
+                                    </div>
+                                    <div class="stage-section">
+                                        <h4>👥 Stakeholders</h4>
+                                        <div class="stakeholder-tags">
+                                            <span class="tag">Security vendors/SIs</span>
+                                            <span class="tag">Regional dealers</span>
+                                            <span class="tag">Marketing/media agencies</span>
+                                            <span class="tag">CRM/CS teams</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Stage 3 -->
+                        <div class="stage-card">
+                            <div class="stage-header collapsible-header" data-section="stage-3">
+                                <div class="stage-toggle">
+                                    <span class="toggle-arrow">▼</span>
+                                    <div class="stage-info">
+                                        <h3>Stage 3: Scale & Penetrate</h3>
+                                        <span class="stage-timeframe">10-18 months</span>
+                                    </div>
+                                </div>
+                                <div class="stage-status">
+                                    <span class="status-badge">Not Started</span>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 5%"></div>
+                                        <span class="progress-text">5%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stage-content hidden" id="stage-3-content">
+                                <div class="stage-details">
+                                    <div class="stage-section">
+                                        <h4>📋 Tasks</h4>
+                                        <div class="task-list">
+                                            <label class="task-item">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                                <span class="task-text">District Expansion Planning</span>
+                                                <span class="task-assignee">Regional Team</span>
+                                            </label>
+                                            <label class="task-item">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                                <span class="task-text">Partner Integration</span>
+                                                <span class="task-assignee">BD Team</span>
+                                            </label>
+                                            <label class="task-item">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                                <span class="task-text">Renewal Automation</span>
+                                                <span class="task-assignee">Product Team</span>
+                                            </label>
+                                            <label class="task-item">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                                <span class="task-text">Model Enhancement</span>
+                                                <span class="task-assignee">Data Science</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="stage-section">
+                                        <h4>🎯 Deliverables</h4>
+                                        <div class="deliverables-list">
+                                            <div class="deliverable-item">200 districts active</div>
+                                            <div class="deliverable-item">4+ B2B partners live</div>
+                                            <div class="deliverable-item">Automated renewal nudges</div>
+                                            <div class="deliverable-item">Explainable rating in production</div>
+                                        </div>
+                                    </div>
+                                    <div class="stage-section">
+                                        <h4>👥 Stakeholders</h4>
+                                        <div class="stakeholder-tags">
+                                            <span class="tag">Regional ops & sales</span>
+                                            <span class="tag">B2B partner BD/tech</span>
+                                            <span class="tag">Data science/Actuarial</span>
+                                            <span class="tag">Customer success</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Stage 4 -->
+                        <div class="stage-card">
+                            <div class="stage-header collapsible-header" data-section="stage-4">
+                                <div class="stage-toggle">
+                                    <span class="toggle-arrow">▼</span>
+                                    <div class="stage-info">
+                                        <h3>Stage 4: Optimize & Integrate</h3>
+                                        <span class="stage-timeframe">19-36 months</span>
+                                    </div>
+                                </div>
+                                <div class="stage-status">
+                                    <span class="status-badge">Not Started</span>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 0%"></div>
+                                        <span class="progress-text">0%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stage-content hidden" id="stage-4-content">
+                                <div class="stage-details">
+                                    <div class="stage-section">
+                                        <h4>📋 Tasks</h4>
+                                        <div class="task-list">
+                                            <label class="task-item">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                                <span class="task-text">HDFC Ecosystem Integration</span>
+                                                <span class="task-assignee">Integration Team</span>
+                                            </label>
+                                            <label class="task-item">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                                <span class="task-text">Sustainability Framework</span>
+                                                <span class="task-assignee">Product Team</span>
+                                            </label>
+                                            <label class="task-item">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                                <span class="task-text">Predictive Analytics</span>
+                                                <span class="task-assignee">Data Science</span>
+                                            </label>
+                                            <label class="task-item">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                                <span class="task-text">Loyalty Program Launch</span>
+                                                <span class="task-assignee">Marketing Team</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="stage-section">
+                                        <h4>🎯 Deliverables</h4>
+                                        <div class="deliverables-list">
+                                            <div class="deliverable-item">Cross-product rewards</div>
+                                            <div class="deliverable-item">Green credit framework</div>
+                                            <div class="deliverable-item">Model governance & monitoring</div>
+                                            <div class="deliverable-item">Loyalty program at scale</div>
+                                        </div>
+                                    </div>
+                                    <div class="stage-section">
+                                        <h4>👥 Stakeholders</h4>
+                                        <div class="stakeholder-tags">
+                                            <span class="tag">HDFC Group entities</span>
+                                            <span class="tag">EV OEMs & charging networks</span>
+                                            <span class="tag">Regulatory/Compliance</span>
+                                            <span class="tag">Cloud/tech partners</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stakeholder Management -->
+            <section class="dashboard-section">
+                <div class="section-header collapsible-header" data-section="stakeholders">
+                    <div class="section-toggle">
+                        <span class="toggle-arrow">▼</span>
+                        <h2>👥 Stakeholder Management</h2>
+                    </div>
+                </div>
+                <div class="section-content hidden" id="stakeholders-content">
+                    <div class="stakeholder-database">
+                        <div class="database-header">
+                            <h3>Contact Database</h3>
+                            <div class="database-filters">
+                                <select class="form-control">
+                                    <option>All Teams</option>
+                                    <option>Technology</option>
+                                    <option>Product</option>
+                                    <option>Marketing</option>
+                                    <option>PMO</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="database-table">
+                            <div class="table-header">
+                                <div class="table-cell">Name</div>
+                                <div class="table-cell">Role</div>
+                                <div class="table-cell">Team</div>
+                                <div class="table-cell">Contact</div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-cell">
+                                    <div class="stakeholder-item">
+                                        <span class="stakeholder-avatar">R</span>
+                                        <span class="stakeholder-name">Rajesh Kumar</span>
+                                    </div>
+                                </div>
+                                <div class="table-cell">Project Manager</div>
+                                <div class="table-cell"><span class="team-tag">PMO</span></div>
+                                <div class="table-cell">rajesh.k@hdfcergo.com</div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-cell">
+                                    <div class="stakeholder-item">
+                                        <span class="stakeholder-avatar">P</span>
+                                        <span class="stakeholder-name">Priya Sharma</span>
+                                    </div>
+                                </div>
+                                <div class="table-cell">Tech Lead</div>
+                                <div class="table-cell"><span class="team-tag">Technology</span></div>
+                                <div class="table-cell">priya.s@hdfcergo.com</div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-cell">
+                                    <div class="stakeholder-item">
+                                        <span class="stakeholder-avatar">A</span>
+                                        <span class="stakeholder-name">Amit Patel</span>
+                                    </div>
+                                </div>
+                                <div class="table-cell">Product Owner</div>
+                                <div class="table-cell"><span class="team-tag">Product</span></div>
+                                <div class="table-cell">amit.p@hdfcergo.com</div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-cell">
+                                    <div class="stakeholder-item">
+                                        <span class="stakeholder-avatar">S</span>
+                                        <span class="stakeholder-name">Sneha Reddy</span>
+                                    </div>
+                                </div>
+                                <div class="table-cell">Marketing Head</div>
+                                <div class="table-cell"><span class="team-tag">Marketing</span></div>
+                                <div class="table-cell">sneha.r@hdfcergo.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Metrics & KPIs -->
+            <section class="dashboard-section">
+                <div class="section-header collapsible-header" data-section="metrics">
+                    <div class="section-toggle">
+                        <span class="toggle-arrow">▼</span>
+                        <h2>📈 Metrics & KPIs Tracking</h2>
+                    </div>
+                </div>
+                <div class="section-content hidden" id="metrics-content">
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <h4>Customer Acquisition</h4>
+                            <div class="metric-value-large">125,000</div>
+                            <div class="metric-trend positive">↑ 12% vs target</div>
+                        </div>
+                        <div class="metric-card">
+                            <h4>Processing Time Reduction</h4>
+                            <div class="metric-value-large">42%</div>
+                            <div class="metric-trend positive">↓ Significant improvement</div>
+                        </div>
+                        <div class="metric-card">
+                            <h4>First Call Resolution</h4>
+                            <div class="metric-value-large">78.3%</div>
+                            <div class="metric-trend positive">↑ Above industry avg</div>
+                        </div>
+                        <div class="metric-card">
+                            <h4>Partner Adoption</h4>
+                            <div class="metric-value-large">68%</div>
+                            <div class="metric-trend neutral">→ On track</div>
+                        </div>
+                        <div class="metric-card">
+                            <h4>Compliance Score</h4>
+                            <div class="metric-value-large">94%</div>
+                            <div class="metric-trend positive">↑ Excellent</div>
+                        </div>
+                        <div class="metric-card">
+                            <h4>ROI Progress</h4>
+                            <div class="metric-value-large">35%</div>
+                            <div class="metric-trend positive">↑ Ahead of schedule</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Resources -->
+            <section class="dashboard-section">
+                <div class="section-header collapsible-header" data-section="resources">
+                    <div class="section-toggle">
+                        <span class="toggle-arrow">▼</span>
+                        <h2>📚 Resources & Documentation</h2>
+                    </div>
+                </div>
+                <div class="section-content hidden" id="resources-content">
+                    <div class="resources-grid">
+                        <div class="resource-card">
+                            <h4>📄 Key Documents</h4>
+                            <div class="resource-list">
+                                <a href="#" class="resource-link">Project Charter</a>
+                                <a href="#" class="resource-link">Technical Specifications</a>
+                                <a href="#" class="resource-link">Risk Assessment</a>
+                                <a href="#" class="resource-link">Compliance Framework</a>
+                            </div>
+                        </div>
+                        <div class="resource-card">
+                            <h4>🔧 Template Library</h4>
+                            <div class="resource-list">
+                                <a href="#" class="resource-link">Meeting Notes Template</a>
+                                <a href="#" class="resource-link">Status Report Template</a>
+                                <a href="#" class="resource-link">Testing Checklist</a>
+                                <a href="#" class="resource-link">Deployment Guide</a>
+                            </div>
+                        </div>
+                        <div class="resource-card">
+                            <h4>🎯 Best Practices</h4>
+                            <div class="resource-list">
+                                <a href="#" class="resource-link">API Integration Guidelines</a>
+                                <a href="#" class="resource-link">Security Standards</a>
+                                <a href="#" class="resource-link">Performance Benchmarks</a>
+                                <a href="#" class="resource-link">User Experience Guidelines</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
